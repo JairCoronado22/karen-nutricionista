@@ -23,7 +23,7 @@
     const isAgua = theme === "agua";
     root.setAttribute("data-color-theme", isAgua ? "agua" : "turquesa");
     localStorage.setItem("karen-color-theme", isAgua ? "agua" : "turquesa");
-    themeLabel.textContent = isAgua ? "Tema 1" : "Tema 2";
+    themeLabel.textContent = isAgua ? "Tema" : "Tema";
     themeToggle.setAttribute("aria-label", isAgua ? "Cambiar a tema turquesa" : "Cambiar a tema verde agua");
     themeToggle.setAttribute("title", isAgua ? "Cambiar a turquesa" : "Cambiar a verde agua");
 
