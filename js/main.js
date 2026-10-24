@@ -15,7 +15,7 @@
 
   currentYear.textContent = new Date().getFullYear();
 
-  // Alterna entre las dos paletas infantiles solicitadas.
+  
   const savedTheme = localStorage.getItem("karen-color-theme") || "turquesa";
   applyTheme(savedTheme);
 
@@ -36,7 +36,7 @@
     applyTheme(current === "agua" ? "turquesa" : "agua");
   });
 
-  // Menú móvil.
+  
   function closeMenu() {
     navMenu.classList.remove("open");
     menuToggle.setAttribute("aria-expanded", "false");
@@ -68,7 +68,7 @@
     if (window.innerWidth > 900) closeMenu();
   });
 
-  // Texto animado en la portada.
+  
   const roles = [
     "nutricionista pediátrica",
     "enfoque en nutrición infantil",
@@ -101,7 +101,7 @@
 
   setTimeout(typeRole, 1500);
 
-  // Animaciones al entrar en pantalla.
+  
   const revealElements = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window) {
     const revealObserver = new IntersectionObserver((entries, observer) => {
@@ -117,7 +117,7 @@
     revealElements.forEach((element) => element.classList.add("visible"));
   }
 
-  // Navegación activa y botón volver arriba.
+  
   const sections = [...document.querySelectorAll("main .section-anchor[id]")];
   let ticking = false;
 
@@ -144,7 +144,7 @@
 
   backToTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
 
-  // Copiado de datos de contacto y pago.
+  
   let toastTimer;
   function showToast(message = "Copiado") {
     toast.textContent = message;
